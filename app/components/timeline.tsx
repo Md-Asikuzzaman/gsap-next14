@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Home() {
+export const Timelime = () => {
   const tl = gsap.timeline({
     scrollTrigger: {
       markers: true,
@@ -15,12 +15,12 @@ export default function Home() {
       start: "top 70%",
       end: "top 30%",
       scrub: true,
-      toggleClass: "myStyle"
+      toggleClass: "myStyle",
     },
   });
 
   useGSAP(() => {
-    tl.to(".box", { 
+    tl.to(".box", {
       x: 200,
       y: 0,
       duration: 1,
@@ -49,4 +49,4 @@ export default function Home() {
       <section id="sec" className="min-h-screen bg-blue-300 "></section>
     </main>
   );
-}
+};
