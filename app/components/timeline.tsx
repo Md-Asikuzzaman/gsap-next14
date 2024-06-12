@@ -44,7 +44,7 @@ export const Timelime = () => {
 
   return (
     <main>
-      <section className="min-h-screen bg-blue-300"></section>
+      <section className="min-h-screen bg-purple-300"></section>
       <div className="box h-20 w-20 bg-red-500"></div>
       <section id="sec" className="min-h-screen bg-blue-300 "></section>
     </main>
