@@ -6,7 +6,7 @@ import { ScrollTrigger } from "gsap/all";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export default function Home() {
+export const StandAlone = () => {
   useGSAP(() => {
     ScrollTrigger.create({
       markers: true,
@@ -29,4 +29,4 @@ export default function Home() {
       <section id="sec" className="min-h-screen bg-blue-300 "></section>
     </main>
   );
-}
+};
